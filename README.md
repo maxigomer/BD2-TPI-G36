@@ -32,7 +32,7 @@ La Base de Datos le permite al usuario:
 ### Vistas
 - VW_MedicamentosVendidosUltimos30Dias
 - VW_ResumenEntregasUltimos30Dias
-- VIEW VW_StockMedicamentos
+- VW_StockMedicamentos
 - VW_ResumenIngresosUltimos30Dias
 - VW_MedicamentosMayorRecaudacion
 - VW_ClientesYComprasFrecuentes
