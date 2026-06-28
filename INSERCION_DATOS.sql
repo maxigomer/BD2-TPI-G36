@@ -66,19 +66,41 @@ VALUES
 (3, 3, DATEADD(DAY,-25,GETDATE()), 12500),
 (1, 1, DATEADD(DAY,-29,GETDATE()), 37200);
 
-INSERT INTO DetalleEntrega
-(IDEntrega, IDLote, Cantidad, ImporteFinal)
-VALUES
-(1, 1, 5, 12500.00),
-(2, 3, 3, 18600.00),
-(3, 4, 5, 9000.00),
-(4, 1, 6, 15000.00),   
-(5, 3, 4, 24800.00),   
-(6, 4, 7, 12600.00),   
-(7, 4, 5, 9000.00),    
-(8, 1, 12, 30000.00),  
-(9, 3, 1, 6200.00),    
-(10,4, 10, 18000.00),  
-(11,4, 12, 21600.00),  
-(12,1, 5, 12500.00),   
-(13,3, 6, 37200.00);   
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (1, 1, 5, 12500.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (2, 3, 3, 18600.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (3, 4, 5, 9000.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (4, 1, 6, 15000.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (5, 3, 4, 24800.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (6, 4, 7, 12600.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (7, 4, 5, 9000.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (8, 1, 12, 30000.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (9, 3, 1, 6200.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (10, 4, 10, 18000.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (11, 4, 12, 21600.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (12, 1, 5, 12500.00);
+
+INSERT INTO DetalleEntrega (IDEntrega, IDLote, Cantidad, ImporteFinal)
+VALUES (13, 3, 6, 37200.00);
