@@ -36,7 +36,6 @@ La Base de Datos le permite al usuario:
 - VW_ResumenIngresosUltimos30Dias
 - VW_MedicamentosMayorRecaudacion
 - VW_ClientesYComprasFrecuentes
-- VW_GananciaPorMedicamento
 
 ### Triggers
 - tr_actualizarStockLotes
