@@ -21,7 +21,7 @@ L.Nombre
 GO
 
 
---VW_ResumenEntregasUltimos30Dias: Vista que muestra un resumen de las entregas de los últimos treinta días
+--VW_ResumenEntregasUltimos30Dias: Vista que muestra un resumen de las entregas de los últimos treinta días 
 
 CREATE VIEW VW_ResumenEntregasUltimos30Dias AS
 SELECT
@@ -102,18 +102,5 @@ INNER JOIN Lotes L ON D.IDLote = L.IDLote
 INNER JOIN Medicamentos M ON L.IDMedicamento = M.IDMedicamento
 GROUP BY C.ApellidoResponsable, C.NombreResponsable, C.NombreCliente, M.NombreComercial
 ORDER BY CantidadComprada DESC;
-GO
-
-
---VW_GananciaPorMedicamento: Vista que muestra el margen de ganancia por medicamento vendido
-
-CREATE VIEW VW_GananciaPorMedicamento AS
-SELECT M.IDMedicamento, M.NombreComercial, 
-dbo.fn_formatearDinero((SUM(D.ImporteFinal) / SUM(D.Cantidad)) - M.PrecioUnitario) AS Ganancia,
-M.PrecioUnitario
-FROM Lotes L
-INNER JOIN Medicamentos M ON L.IDMedicamento = M.IDMedicamento
-INNER JOIN DetalleEntrega D ON L.IDLote = D.IDLote
-GROUP BY M.IDMedicamento, M.NombreComercial, M.PrecioUnitario;
 GO
 
